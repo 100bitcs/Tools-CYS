@@ -3,4 +3,6 @@
         :Under Wireless LAN adapter Wi-fi:
             - IPv4 Address =  your device IP(provided by the Wifi router)
             - Default Gateway = Wifi router's IP
+        :Under VMnet8 section:
+            - IPv4 Address =  Virtual machine's IP
       
