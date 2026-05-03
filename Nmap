@@ -1,1 +1,2 @@
-
+# nmap -sn <IP range>  *192.168.1.0/24
+-> To discover all devices online (Name of devices will show)
