@@ -4,8 +4,11 @@
             - IPv4 Address =  your device IP(provided by the Wifi router)
             - Default Gateway = Wifi router's IP
         :Under VMnet8 section:
-            - IPv4 Address =  Virtual machine's IP
+            - IPv4 Address =  Virtual Workstation's IP
   -> Use <ifconfig> in Linux(kali) terminal.
         :Under eth0:
-            - inet = virtual system(Kali)'s IP
+            - inet = virtual machines(Kali)'s IP
+
+# Path taken by virtual machine to access Internet.
+    : VM(kali) -> VW(VMware) -> Device -> Router
       
