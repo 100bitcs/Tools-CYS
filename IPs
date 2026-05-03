@@ -1,2 +1,6 @@
 # To check IP address:
   -> Use <ipconfig> in Windows terminal.
+        :Under Wireless LAN adapter Wi-fi:
+            - IPv4 Address =  your device IP(provided by the Wifi router)
+            - Default Gateway = Wifi router's IP
+      
