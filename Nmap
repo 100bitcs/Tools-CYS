@@ -2,3 +2,5 @@
 -> To discover all devices online (Name of devices will show)
 # nmap -sP <IP> 
 -> check whether ip is active or not
+# nmap -R -sP <IP> 
+-> check the name of the device
