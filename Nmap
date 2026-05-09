@@ -27,7 +27,9 @@ $* PORT SCANNING:-
          # nmap -sT <IP>
                   -> TCP connect scan. TCP three way handshake( SYN[S , SYN-ACK, ACK)
                   -> No root privileges. It is "loud" as full connection is established.
-        
+         # sudo nmap -sS <IP>
+                  -> SYN stealth scan. Half open handshake (SYN, SYN-ACK, RST[reset])
+                  -> More stealthier(connection is never fully established) and faster but need root privileges.
 
 
          
