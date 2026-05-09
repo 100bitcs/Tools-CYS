@@ -15,4 +15,6 @@
 # To check if a host is alive:
   -> ping -c 4 <ip>
   -> ping -c 4 <host name>
+ : where -c tell how many packets to send without it infinite will be sent and have to use ctrl c to forcefully stop it.
+ : here only 4 packets were sent.
 
