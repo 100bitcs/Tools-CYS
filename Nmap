@@ -1,24 +1,26 @@
-$* To discover alive host/s in a network.
-# nmap -sn <IP>  OR  nmap -sP <IP> 
-         -> Here, -sP ping scan (old option to check if host is up no port scan)
-                  -sn no port scan ( modern option skip port scan , just do host discovery)
-# nmap -R -sn <IP> 
-         -> with -R nmap tries to check host name (reverse DNS) even if host is dead.
+$* To discover alive host/s in a network:-
 
-$* effecient way to use.
-# nmap -sn <IP subnet> -oG hosts.txt
-         -> To store the result in a file.
-         here, -oG is for greppable output
-                hosts.txt is file name containing the result of -sn command ie ip , status and hostname (if resolved).
-# grep Up hosts.txt | awk '{print $2}' > live_hosts.txt
-         -> To store the alive IPs into a file.
-         here, with grep takes the line which has status "Up".
-               then print second field ie IPs in the live_hosts.txt file
-                   ( Host: 192.168.1.5 (printer.local)   Status: Up) $2 is IP
-# nmap -sV -iL live_hosts.txt
-         -> run a full port scan only on those live hosts. (*Focus resources where it matters)
-         here, -iL input from list file
-               -sV service/version detection
+         # nmap -sn <IP>  OR  nmap -sP <IP> 
+                  -> Here, -sP ping scan (old option to check if host is up no port scan)
+                           -sn no port scan ( modern option skip port scan , just do host discovery)
+         # nmap -R -sn <IP> 
+                  -> with -R nmap tries to check host name (reverse DNS) even if host is dead.
+
+$* effecient way to use:-
+
+         # nmap -sn <IP subnet> -oG hosts.txt
+                  -> To store the result in a file.
+                  here, -oG is for greppable output
+                         hosts.txt is file name containing the result of -sn command ie ip , status and hostname (if resolved).
+         # grep Up hosts.txt | awk '{print $2}' > live_hosts.txt
+                  -> To store the alive IPs into a file.
+                  here, with grep takes the line which has status "Up".
+                        then print second field ie IPs in the live_hosts.txt file
+                            ( Host: 192.168.1.5 (printer.local)   Status: Up) $2 is IP
+         # nmap -sV -iL live_hosts.txt
+                  -> run a full port scan only on those live hosts. (*Focus resources where it matters)
+                  here, -iL input from list file
+                        -sV service/version detection
 
          
 
