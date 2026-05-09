@@ -11,4 +11,8 @@
 
 # Path taken by virtual machine to access Internet.
     : VM(kali) -> VW(VMware) -> Device -> Router
-      
+
+# To check if a host is alive:
+  -> ping -c 4 <ip>
+  -> ping -c 4 <host name>
+
