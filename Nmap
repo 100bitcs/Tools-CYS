@@ -15,6 +15,10 @@ $* effecient way to use.
          here, with grep takes the line which has status "Up".
                then print second field ie IPs in the live_hosts.txt file
                    ( Host: 192.168.1.5 (printer.local)   Status: Up) $2 is IP
+# nmap -sV -iL live_hosts.txt
+         -> run a full port scan only on those live hosts. (*Focus resources where it matters)
+         here, -iL input from list file
+               -sV service/version detection
 
          
 
