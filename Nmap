@@ -2,5 +2,5 @@
 -> To discover alive host/s in a network.
 -> Here, -sP ping scan (old option to check if host is up no port scan)
          -sn no port scan ( modern option skip port scan , just do host discovery)
-# nmap -R -sP <IP> 
--> check the name of the device
+# nmap -R -sn <IP> 
+-> with -R nmap tries to check host name (reverse DNS) even if host is dead
