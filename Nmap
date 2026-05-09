@@ -7,6 +7,15 @@ $* To discover alive host/s in a network.
 
 $* effecient way to use.
 # nmap -sn <IP subnet> -oG hosts.txt
+         -> To store the result in a file.
          here, -oG is for greppable output
-                hosts.txt is file name containing all alive hosts.
+                hosts.txt is file name containing the result of -sn command ie ip , status and hostname (if resolved).
+# grep Up hosts.txt | awk '{print $2}' > live_hosts.txt
+         -> To store the alive IPs into a file.
+         here, with grep takes the line which has status "Up".
+               then print second field ie IPs in the live_hosts.txt file
+                   ( Host: 192.168.1.5 (printer.local)   Status: Up) $2 is IP
+
+         
+
          
