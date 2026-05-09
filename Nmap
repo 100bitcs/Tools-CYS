@@ -1,4 +1,4 @@
-$* To discover alive host/s in a network:-
+$* TO DISCOVER ALIVE HOST/S IN A NETWORK:-
 
          # nmap -sn <IP>  OR  nmap -sP <IP> 
                   -> Here, -sP ping scan (old option to check if host is up no port scan)
@@ -21,6 +21,14 @@ $* effecient way to use:-
                   -> run a full port scan only on those live hosts. (*Focus resources where it matters)
                   here, -iL input from list file
                         -sV service/version detection
+
+$* PORT SCANNING:-
+
+         # nmap -sT <IP>
+                  -> TCP connect scan. TCP three way handshake( SYN[S , SYN-ACK, ACK)
+                  -> No root privileges. It is "loud" as full connection is established.
+        
+
 
          
 
