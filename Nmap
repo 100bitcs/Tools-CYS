@@ -35,6 +35,8 @@ $* PORT SCANNING:-
                   -> Scan for most common 1000 UDP ports
          # sudo nmap -sU -F <IP>
                   -> Scan for most common 100 UDP ports
+         # sudo nmap -sU -p <PORT> <IP>
+                  -> For specific ports
 
 
          
