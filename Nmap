@@ -23,6 +23,7 @@ $* effecient way to use:-
                         -sV service/version detection
 
 $* PORT SCANNING:-
+
          {TCP}
          # nmap -sT <IP>
                   -> TCP connect scan. TCP three way handshake( SYN[S , SYN-ACK, ACK)
@@ -30,6 +31,7 @@ $* PORT SCANNING:-
          # sudo nmap -sS <IP>
                   -> SYN stealth scan. Half open handshake (SYN, SYN-ACK, RST[reset])
                   -> More stealthier(connection is never fully established) and faster but need root privileges.
+      
          {UDP}
          # sudo nmap -sU <IP>
                   -> Scan for most common 1000 UDP ports
@@ -41,6 +43,11 @@ $* PORT SCANNING:-
                   -> To force nmap to find out if port is actually open 
       * # sudo nmap -sS -sU <IP>
                   -> Scanning TCP and UDP Together.
+
+         {ACK scan}
+         # nmap -sA <IP>
+                  -> Used for firewall mapping. Doesn't tell if port is open, only whether it's filtered/unfiltered.
+                  
 
 
          
