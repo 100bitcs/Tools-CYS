@@ -37,6 +37,8 @@ $* PORT SCANNING:-
                   -> Scan for most common 100 UDP ports
          # sudo nmap -sU -p <PORT> <IP>
                   -> For specific ports
+         # sudo nmap -sU -sV <IP>
+                  -> To force nmap to find out if port is actually open 
 
 
          
