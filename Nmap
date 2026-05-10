@@ -39,6 +39,8 @@ $* PORT SCANNING:-
                   -> For specific ports
          # sudo nmap -sU -sV <IP>
                   -> To force nmap to find out if port is actually open 
+      * # sudo nmap -sS -sU <IP>
+                  -> Scanning TCP and UDP Together.
 
 
          
