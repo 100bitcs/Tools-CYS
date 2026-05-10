@@ -47,7 +47,18 @@ $* PORT SCANNING:-
          {ACK scan}
          # nmap -sA <IP>
                   -> Used for firewall mapping. Doesn't tell if port is open, only whether it's filtered/unfiltered.
-                  
+
+         {Stealth scan}
+         # nmap -sN <IP>
+                  -> Null Scan. Closed port responds with (RST) and Open port no response (open|filtered)
+                  -> no flags, empty TCP packet
+         # nmap -sF <IP>
+                  -> FIN Scan. Same as Null scan.
+                  -> TCP packet with only FIN flag
+         # nmap -sX <IP>
+                  -> Xmas Scan. Same as Null scan.
+                  -> TCP packet with FIN + PSH + URG flags.
+
 
 
          
