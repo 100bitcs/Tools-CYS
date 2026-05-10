@@ -23,14 +23,16 @@ $* effecient way to use:-
                         -sV service/version detection
 
 $* PORT SCANNING:-
-
+         {TCP}
          # nmap -sT <IP>
                   -> TCP connect scan. TCP three way handshake( SYN[S , SYN-ACK, ACK)
                   -> No root privileges. It is "loud" as full connection is established.
          # sudo nmap -sS <IP>
                   -> SYN stealth scan. Half open handshake (SYN, SYN-ACK, RST[reset])
                   -> More stealthier(connection is never fully established) and faster but need root privileges.
-
+         {UDP}
+         # sudo nmap -sU <IP>
+                  -> Scan for most common 1000 UDP ports
 
          
 
