@@ -66,6 +66,8 @@ $* SERVICE AND VERSION DETECTION:-
 
          # sudo nmap -sV --version-intensity <0-10> <IP>
                   -> Controlling Scan precision, 0 for light scan and 9 for max intensity scan
+         # sudo nmap -sV --packet-trace <IP>
+                  -> Show the actual raw data Nmap is exchanging with target server
 
          
 
