@@ -78,6 +78,8 @@ $* OS DETECTION:-
                   -> Forces Nmap to provide percentage based guesses if no perfect match exists.
          # sudo nmap -O --osscan-limit <IP>
                   -> Skip the target which lack the required open/closed ports condition.
+         # sudo nmap -O --max-os-tries <number> <IP>
+                  -> Limits the no of times Nmap will cycle its probes on a glitchy target.
      
 
          
