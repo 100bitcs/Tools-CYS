@@ -70,6 +70,10 @@ $* SERVICE AND VERSION DETECTION:-
          # sudo nmap -sS -sV <IP> or sudo nmap -sU -sV <IP>
                   -> Combining protocols with version detection.
 
+$* OS DETECTION:-
+
+         # sudo nmap -O <IP>
+l                  -> Standard OS fingerprinting. Requires 1 open and 1 closed port.
          
 
          
