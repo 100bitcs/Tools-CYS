@@ -76,6 +76,8 @@ $* OS DETECTION:-
                   -> Standard OS fingerprinting. Requires 1 open and 1 closed port.
          # sudo nmap -O --osscan-guess <IP> (OR) sudo nmap -O --fuzzy <IP>
                   -> Forces Nmap to provide percentage based guesses if no perfect match exists.
+         # sudo nmap -O --osscan-limit <IP>
+                  -> Skip the target which lack the required open/closed ports condition.
      
 
          
