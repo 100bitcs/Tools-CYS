@@ -73,7 +73,11 @@ $* SERVICE AND VERSION DETECTION:-
 $* OS DETECTION:-
 
          # sudo nmap -O <IP>
-l                  -> Standard OS fingerprinting. Requires 1 open and 1 closed port.
+                  -> Standard OS fingerprinting. Requires 1 open and 1 closed port.
+         # sudo nmap -O --osscan-guess <IP> (OR) sudo nmap -O --fuzzy <IP>
+                  -> Forces Nmap to provide percentage based guesses if no perfect match exists.
+     
+
          
 
          
