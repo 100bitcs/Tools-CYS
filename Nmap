@@ -83,6 +83,7 @@ $* OS DETECTION:-
 
 $* NSE : Nmap Scripting Engine
 
+ ## Essential NSE control commands:-
          # nmap -sC <IP>
                   -> Default Scan: Runs the curated set of safe, fast, and highly informative default scripts.
          # nmap -sV -sC <IP>
@@ -91,6 +92,15 @@ $* NSE : Nmap Scripting Engine
                   -> Script Documentation: Displays the description, categories, and required arguments for a specific script before running it. 
          # nmap --script-updatedb
                   -> Update Database: Updates Nmap's local script database cache after downloading or updating scripts. 
+
+ ## Running Sripts by Category:-
+         # nmap --script=safe <IP>
+                  -> Safe: Low-risk scripts that will not crash services or consume massive bandwidth. Safe for production environments. 
+         # nmap --script=discovery <IP>
+                  -> Discovery: Actively maps public information .
+         # nmap --script=vuln <IP>
+                  -> Vulnerability: Checks open ports against a massive library of known vulnerabilities (CVEs). Note: Can be intrusive/loud.
+      
 
          
 
