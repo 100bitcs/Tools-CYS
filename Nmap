@@ -100,7 +100,10 @@ $* NSE : Nmap Scripting Engine
                   -> Discovery: Actively maps public information .
          # nmap --script=vuln <IP>
                   -> Vulnerability: Checks open ports against a massive library of known vulnerabilities (CVEs). Note: Can be intrusive/loud.
-      
+         # nmap --script=auth <IP>
+                  -> Authentication: Checks if services accept default vendor credentials or allow authentication bypasses. 
+         # nmap --script=brute <IP>
+                  -> Brute-Force:  Automates password guessing attacks against protocols like SSH, FTP, or databases using mini-wordlists. 
 
          
 
