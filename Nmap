@@ -105,6 +105,12 @@ $* NSE : Nmap Scripting Engine
          # nmap --script=brute <IP>
                   -> Brute-Force:  Automates password guessing attacks against protocols like SSH, FTP, or databases using mini-wordlists. 
 
+ ## Advanced Scripts Selection & Arguments:-
+         # nmap --script="http-*" 
+                  -> Wildcard Selection: Executes *every* script in the library that begins with `http-`.
+        
+
+
          
 
    
