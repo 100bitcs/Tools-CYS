@@ -87,9 +87,11 @@ $* NSE : Nmap Scripting Engine
                   -> Default Scan: Runs the curated set of safe, fast, and highly informative default scripts.
          # nmap -sV -sC <IP>
                   -> Version + Default Script Combo: The industry standard for initial service auditing. Explores services deeply using default scripts.
-       
-     
+         # nmap --script-help "<script_name>"
+                  -> Script Documentation: Displays the description, categories, and required arguments for a specific script before running it. 
+         # nmap --script-updatedb
+                  -> Update Database: Updates Nmap's local script database cache after downloading or updating scripts. 
 
          
 
-         
+   
