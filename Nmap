@@ -80,6 +80,14 @@ $* OS DETECTION:-
                   -> Skip the target which lack the required open/closed ports condition.
          # sudo nmap -O --max-os-tries <number> <IP>
                   -> Limits the no of times Nmap will cycle its probes on a glitchy target.
+
+$* NSE : Nmap Scripting Engine
+
+         # nmap -sC <IP>
+                  -> Default Scan: Runs the curated set of safe, fast, and highly informative default scripts.
+         # nmap -sV -sC <IP>
+                  -> Version + Default Script Combo: The industry standard for initial service auditing. Explores services deeply using default scripts.
+       
      
 
          
