@@ -113,6 +113,14 @@ $* NSE : Nmap Scripting Engine
          # nmap --script=<script> --script-args=<key=val>
                   -> Script Arguments: Passes specific variables (like custom paths, usernames, or API keys) into a script requiring manual input.         
 
-         
+ ## Practical Scripts:-
+         # nmap --script=banner <IP>
+                  -> General TCP: Connects to open ports and captures raw welcome banners transmitted by the application. 
+         # nmap --script=smb-os-discovery <IP>
+                  -> SMB (Port 445): Pulls precise Windows operating system details, NetBIOS names, and domain/workgroup data without credentials. 
+         # nmap -sV --script=vulners <IP>
+                  -> Cross-Protocol: Compares version detection strings against an online vulnerability database to map known exploits automatically. 
+         # nmap --script=http-enum <IP>
+                  -> HTTP (Port 80/443):Enumerates common folders, admin panels, and standard files on web servers. 
 
    
