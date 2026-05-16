@@ -108,8 +108,10 @@ $* NSE : Nmap Scripting Engine
  ## Advanced Scripts Selection & Arguments:-
          # nmap --script="http-*" 
                   -> Wildcard Selection: Executes *every* script in the library that begins with `http-`.
-        
-
+         # nmap --script="default and not intrusive"
+                  -> Boolean Logic: Runs all default scripts but explicitly skips any that are flagged as high-risk or disruptive. 
+         # nmap --script=<script> --script-args=<key=val>
+                  -> Script Arguments: Passes specific variables (like custom paths, usernames, or API keys) into a script requiring manual input.         
 
          
 
